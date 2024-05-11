@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Word Selection Counter",
+    "version": "1.0",
+    "description": "Counts the number of times a word is selected on a webpage.",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
