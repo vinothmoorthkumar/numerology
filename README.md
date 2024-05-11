@@ -1,2 +1,1 @@
-# numerology
-# numerology
+# Find numerology number of name by selecting name
