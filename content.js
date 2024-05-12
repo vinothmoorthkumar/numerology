@@ -3,7 +3,6 @@ function countSelectedText() {
 
   const selection = window.getSelection();
   const selectedtext=selection.toString();
-  console.log("selectedtext",selectedtext)
   if (selectedtext) {
     // Create a tooltip element dynamically
     const tooltip = document.createElement('div');
@@ -60,6 +59,5 @@ function calculateNumericalValue(name) {
   while (numericalValue > 9) {
     numericalValue = Math.floor(numericalValue / 10) + (numericalValue % 10);
   }
-  console.log("numericalValue",numericalValue)
   return numericalValue;
 }
