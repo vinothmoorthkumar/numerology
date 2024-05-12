@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Word Selection Counter",
+    "name": "Text Numerology Reader",
     "version": "1.0",
-    "description": "Counts the number of times a word is selected on a webpage.",
+    "description": "Find numerology number of name by selecting name",
     "content_scripts": [
       {
         "matches": ["<all_urls>"],

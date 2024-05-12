@@ -2,11 +2,13 @@
 function countSelectedText() {
 
   const selection = window.getSelection();
-  if (selection.toString()) {
+  const selectedtext=selection.toString();
+  console.log("selectedtext",selectedtext)
+  if (selectedtext) {
     // Create a tooltip element dynamically
     const tooltip = document.createElement('div');
     tooltip.classList.add('word-count-tooltip'); // Add CSS class for styling (optional)
-    tooltip.textContent = calculateNumericalValue(selection.toString());
+    tooltip.textContent = calculateNumericalValue(selectedtext);
 
     // Position the tooltip accurately above the selection
     const range = selection.getRangeAt(0);
@@ -18,6 +20,8 @@ function countSelectedText() {
     tooltip.style.border = "1px solid #0000FF";
     tooltip.style.padding = "2px";
     tooltip.style.fontSize="large";
+    tooltip.style.color="#ffffff";
+
 
 
     // Append the tooltip to the body and remove on mouseleave
@@ -56,6 +60,6 @@ function calculateNumericalValue(name) {
   while (numericalValue > 9) {
     numericalValue = Math.floor(numericalValue / 10) + (numericalValue % 10);
   }
-  
+  console.log("numericalValue",numericalValue)
   return numericalValue;
 }
